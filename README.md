@@ -6,7 +6,7 @@
  ### Author: Nikki Carthen Andrew Davis
  
  ### Links and Resources
- * [repo](http://xyz.com)
+ * [repo](https://github.com/Nikki1686/lab-2)
  * [travis](http://xyz.com)
  * [back-end](http://xyz.com) (when applicable)
  * [front-end](http://xyz.com) (when applicable)
