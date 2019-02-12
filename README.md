@@ -8,8 +8,6 @@
  ### Links and Resources
  * [repo](https://github.com/Nikki1686/lab-2)
  * [travis](http://xyz.com)
- * [back-end](http://xyz.com) (when applicable)
- * [front-end](http://xyz.com) (when applicable)
  
  #### Documentation
  * [swagger](http://xyz.com) (API assignments only)
