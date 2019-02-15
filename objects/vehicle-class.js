@@ -11,11 +11,12 @@ class Vehicle {
     stop() {
         return 'Stopping';
     }
-};
+}
 
 class Car extends Vehicle {
-    constructor(name) {
-        super (name, 4);
+    constructor(name, color) {
+        super (name, 4, color);
+        this.color = color;
     }
 }
 class Motorcycle extends Vehicle {

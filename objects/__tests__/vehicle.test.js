@@ -1,6 +1,7 @@
 'use strict';
 
 const Vehicle = require('../vehicle-class');
+const FlyingVehicle = require('../flying-class');
 
 
 describe('Vehicle', () => {
@@ -46,6 +47,46 @@ describe('Vehicle', () => {
     it('cannot do a wheelie', () => {
       expect(motorcycle.wheelie()).toBeTruthy();
     });
+
+  });
+
+  describe('FlyingVehicle', () => {
+
+    describe('Airplane', () => {
+
+      let airplane = new FlyingVehicle.Airplane('foo');
+
+      it('has 5 wings', () => {
+        expect(airplane.wings).toEqual(5);
+      });
+
+      it('can fly', () => {
+        expect(airplane.fly()).toBeTruthy();
+      });
+
+      it('can stop', () => {
+        expect(airplane.stop()).toBeTruthy();
+      });
+
+    });
+
+    // describe('Helicopter', () => {
+    //
+    //   let helicopter = new FlyingVehicle.Helicopter('foo');
+    //
+    //   it('has 0 wings', () => {
+    //     expect(helicopter.wings).toEqual(0);
+    //   });
+    //
+    //   it('can fly', () => {
+    //     expect(helicopter.fly()).toBeTruthy();
+    //   });
+    //
+    //   it('can stop', () => {
+    //     expect(helicopter.stop()).toBeTruthy();
+    //   });
+    //
+    // });
 
   });
 

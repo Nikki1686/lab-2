@@ -1,9 +1,6 @@
 'use strict';
 
-//Variable
-//name, wheels
-//Behavior (Functions)
-//drive, stop
+//Vehicle constructors
 const Vehicle = function(name, wheels) {
   this.name = name;
   this.wheels = wheels;
@@ -24,6 +21,7 @@ const Car = function(name) {
 
 Car.prototype = new Vehicle();
 
+//Motorcycle Constructor
 const Motorcycle = function(name) {
   Vehicle.call(this,name,2);
 };
