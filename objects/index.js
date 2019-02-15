@@ -16,5 +16,5 @@ console.log(harley.name, harley.wheelie(), harley.stop());
 const boeing = new FlyingVehicle.Airplane('Boeing 747');
 console.log(boeing.name, boeing.fly(), boeing.stop());
 
-// const apache = new FlyingVehicle.Helicopter('Apache');
-// console.log(apache.name, apache.fly(), apache.stop());
+const apache = new FlyingVehicle.Helicopter('Apache');
+console.log(apache.name, apache.fly(), apache.stop());

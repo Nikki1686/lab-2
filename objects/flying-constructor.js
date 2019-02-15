@@ -22,5 +22,10 @@ const Airplane = function(name) {
 Airplane.prototype = new FlyingVehicle();
 
 //Helicopter
+const Helicopter = function(name) {
+    FlyingVehicle.call(this, name, 0);
+};
 
-module.exports = {Airplane};
+Helicopter.prototype = new FlyingVehicle();
+
+module.exports = {Airplane, Helicopter};

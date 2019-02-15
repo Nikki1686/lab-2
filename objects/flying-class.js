@@ -18,10 +18,10 @@ class Airplane extends FlyingVehicle {
         super(name, 5);
     }
 }
-// class Helicopter extends FlyingVehicle {
-//     constructor(name) {
-//         super(name, 0);
-//     }
-// };
+class Helicopter extends FlyingVehicle {
+    constructor(name) {
+        super(name, 0);
+    }
+};
 
-module.exports = {Airplane};
+module.exports = {Airplane, Helicopter};

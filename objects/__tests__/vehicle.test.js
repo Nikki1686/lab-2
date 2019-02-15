@@ -70,23 +70,23 @@ describe('Vehicle', () => {
 
     });
 
-    // describe('Helicopter', () => {
-    //
-    //   let helicopter = new FlyingVehicle.Helicopter('foo');
-    //
-    //   it('has 0 wings', () => {
-    //     expect(helicopter.wings).toEqual(0);
-    //   });
-    //
-    //   it('can fly', () => {
-    //     expect(helicopter.fly()).toBeTruthy();
-    //   });
-    //
-    //   it('can stop', () => {
-    //     expect(helicopter.stop()).toBeTruthy();
-    //   });
-    //
-    // });
+    describe('Helicopter', () => {
+
+      let helicopter = new FlyingVehicle.Helicopter('foo');
+
+      it('has 0 wings', () => {
+        expect(helicopter.wings).toEqual(0);
+      });
+
+      it('can fly', () => {
+        expect(helicopter.fly()).toBeTruthy();
+      });
+
+      it('can stop', () => {
+        expect(helicopter.stop()).toBeTruthy();
+      });
+
+    });
 
   });
 
