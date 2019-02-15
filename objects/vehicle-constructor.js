@@ -1,5 +1,22 @@
 'use strict';
 
+//Variable
+//name, wheels
+//Behavior (Functions)
+//drive, stop
+// class Vehicle {
+//   constructor(name, wheels) {
+//     this.name = name;
+//     this.wheels = wheels;
+//   }
+//   drive() {
+//     return 'Moving Forward';
+//   }
+//   stop() {
+//     return 'Stopping';
+//   }
+// };
+//---------------------this whole constructor goes inside of the class and removes the prototypes
 const Vehicle = function(name, wheels) {
   this.name = name;
   this.wheels = wheels;
