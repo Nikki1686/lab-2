@@ -1,6 +1,6 @@
 'use strict';
 
-const carClass = require('./car-class');
+const carClass = require('./vehicle-class');
 const motorcycleClass = require('./motorcycle-class');
 const Vehicle = require('./vehicle-constructor.js');
 // const Vehicle = require('./class.js');
