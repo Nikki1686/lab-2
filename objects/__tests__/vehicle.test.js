@@ -2,6 +2,7 @@
 
 const Vehicle = require('../vehicle-class');
 const FlyingVehicle = require('../flying-class');
+const SeaCreature = require('../creature-class');
 
 
 describe('Vehicle', () => {
@@ -44,7 +45,7 @@ describe('Vehicle', () => {
       expect(motorcycle.stop()).toBeTruthy();
     });
 
-    it('cannot do a wheelie', () => {
+    it('can do a wheelie', () => {
       expect(motorcycle.wheelie()).toBeTruthy();
     });
 
@@ -84,6 +85,45 @@ describe('Vehicle', () => {
 
       it('can stop', () => {
         expect(helicopter.stop()).toBeTruthy();
+      });
+
+    });
+
+  });
+
+  describe('SeaCreature', () => {
+    describe('Fish', () => {
+      let fish = new SeaCreature.Fish('foo');
+
+      it('has 0 claws', () => {
+        expect(fish.claws).toEqual(0);
+      });
+
+      it('can swim', () => {
+        expect(fish.swims()).toBeTruthy();
+      });
+
+      it('is sharkbait', () => {
+        expect(fish.sharkbait()).toBeTruthy();
+      });
+    });
+
+    describe('Lobster', () => {
+      let lobster = new SeaCreature.Lobster('foo');
+
+      it('has 2 claws', () => {
+        expect(lobster.claws).toEqual(2);
+      });
+
+      it('can swim', () => {
+        expect(lobster.swims()).toBeTruthy();
+      });
+      it('is sharkbait', () => {
+        expect(lobster.sharkbait()).toBeTruthy();
+      });
+
+      it('can eat sharks', () => {
+        expect(lobster.snip()).toBeTruthy();
       });
 
     });

@@ -11,7 +11,7 @@ class FlyingVehicle {
     stop() {
         return 'We have reached our destination';
     }
-};
+}
 
 class Airplane extends FlyingVehicle {
     constructor(name) {
@@ -22,6 +22,6 @@ class Helicopter extends FlyingVehicle {
     constructor(name) {
         super(name, 0);
     }
-};
+}
 
 module.exports = {Airplane, Helicopter};
