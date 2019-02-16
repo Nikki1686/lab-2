@@ -7,14 +7,14 @@
  
  ### Links and Resources
  * [repo](https://github.com/Nikki1686/lab-2)
- * [travis](http://xyz.com)
+ * [travis](https://www.travis-ci.com/Nikki1686/lab-2)
  
  #### Documentation
  * [swagger](http://xyz.com) (API assignments only)
  * [jsdoc](http://xyz.com) (All assignments)
  
  ### Modules
- #### `modulename.js`
+ #### ``
  ##### Exported Values and Methods
  
  ###### `foo(thing) -> string`
