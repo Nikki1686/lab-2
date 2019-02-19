@@ -1,4 +1,4 @@
-#![CF](http://i.imgur.com/7v5ASc8.png) LAB
+#![CF](http://i.imgur.com/7v5ASc8.png) LAB 2 [Travis] (https://www.travis-ci.com/Nikki1686/lab-2.svg?branch=master)
  =================================================
  
  ## Lab 2 - Classes, Inheritance, Functioncal Programming
