@@ -27,3 +27,6 @@
    
  #### Tests
  * npm run test
+
+#### Assistance
+* Jessica helped me with the factory module
