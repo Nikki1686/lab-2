@@ -30,19 +30,45 @@ function CarFactory(name, color) {
     const newCar = Object.assign (
         {}, //start with this
         {color}, //then add color
-        new Vehicle(name), //this creates the inheritance pattern
+        {drive},
+        {stop},
+        new Vehicle(name, 4), //this creates the inheritance pattern
 
     );
+
+    function drive () {
+        return 'Moving Forward';
+    }
+
+    function stop () {
+        return 'Stopping';
+    }
+    return Object.freeze(newCar);
+
     const newMotorcycle = Object.assign(
         {},
         (color),
-        new Vehicle(name),
-    )
+        {drive},
+        {stop},
+        {wheelie},
+        new Vehicle(name, 2),
+    );
+
+    function drive () {
+        return 'Moving Forward';
+    }
+
+    function stop () {
+        return 'Stopping';
+    }
+
+    function wheelie () {
+        return 'return Wheee!';
+    }
     //Not a hard requirement-makes developers add future properties to the factory and not all over the place-CLEANER CODE
-    return Object.freeze(newCar);
     return Object.freeze(newMotorcycle);
 }
 
-module.exports = CarFactory;
+module.exports = {Car, Motorcycle};
 
 
